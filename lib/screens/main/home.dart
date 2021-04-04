@@ -18,6 +18,10 @@ class Home extends StatelessWidget {
             onPressed:() async { _authService.signOut();})
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed:() {Navigator.pushNamed(context, '/add');} ,
+        child:Icon(Icons.add) ,
+        ),
       );
   }
 }
