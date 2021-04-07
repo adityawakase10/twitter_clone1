@@ -4,6 +4,7 @@ import 'package:twitter_clone1/models/user.dart';
 import 'package:twitter_clone1/screens/auth/signup.dart';
 import 'package:twitter_clone1/screens/main/home.dart';
 import 'package:twitter_clone1/screens/main/posts/add.dart';
+import 'package:twitter_clone1/screens/main/profile/profile.dart';
 
 class Wrapper extends StatelessWidget {
   const Wrapper({Key key}) : super(key: key);
@@ -21,7 +22,8 @@ class Wrapper extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/' : (context) => Home(), 
-        '/add' : (context) => Add()
+        '/add' : (context) => Add(),
+        '/profile' : (context) => Profile()
       });
   }
 }
